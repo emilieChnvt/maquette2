@@ -8,8 +8,113 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<div class="container"></div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<div class="container body">
+   <div class="d-flex flex-column align-items-center">
+       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+           <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
+           <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
+       </svg>
+       <h2>Checkout form</h2>
+       <p class="text-center">Below is an example from built entirely with Bootstrap's form controls. Each required from group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+   </div>
+    <div class="row d-flex ">
+        <div class="col-6">
+            <form method="">
+                <h3>Biling adress</h3>
+                <div class="row align-items-center ">
+                    <div class="col-6">
+                        <label for="firstName">First Name</label>
+                        <input id="firstName" type="text">
+                    </div>
+                    <div class="col-6">
+                        <label for="lastName">Last Name</label>
+                        <input id="lastName" type="text">
+                    </div>
+                </div>
+                <div class="d-flex flex-column ">
+                        <label for="userName">Username</label>
+                        <input id="userName" type="text">
 
+                        <label for="email">Email (optionnel)</label>
+                        <input id="email"  placeholder="you@example.com" type="mail">
+
+                        <label for="adress">Adress</label>
+                        <input id="adress" placeholder="1234 Main st" type="text">
+                </div>
+                <div class="row ">
+                    <div class="col-3">
+                        <label for="country">Country</label>
+                        <input id="country" type="text">
+                    </div>
+                    <div class="col-3">
+                        <label for="state">State</label>
+                        <input id="state" type="text">
+                    </div>
+                    <div class="col-3">
+                        <label for="zip">Zip</label>
+                        <input id="zip" type="text">
+                    </div>
+                </div>
+                <hr>
+                <div>
+                    <div class="checkbox">
+                        <input id="shipping" type="checkbox">
+                        <label for="shipping">Shipping adress is the same as my biling adress</label>
+
+                    </div>
+                    <div class="checkbox">
+                        <input id="info" type="checkbox">
+                        <label for="info">Save this information for next time</label>
+
+                    </div>
+                </div>
+                <hr>
+                <div class="payment">
+                    <h3>Payment</h3>
+                    <div>
+                        <input id="credit" type="radio" checked>
+                        <label for="credit">Credit card</label>
+                    </div>
+                    <div>
+                        <input id="debit" type="radio">
+                        <label for="debit">Debit card</label>
+                    </div>
+                    <div>
+                        <input id="paypal" type="radio">
+                        <label for="paypal">Paypal</label>
+                    </div>
+                </div>
+                <div class="row align-items-center mt-3">
+                    <div class="col-6 flex-column">
+                        <label for="nameCard">Name on card</label>
+                        <input id="nameCard" type="text">
+                    </div>
+                    <div class="col-6 flex-column">
+                        <label for="cardNumber">Credit card number</label>
+                        <input id="cardNumber" type="text">
+                    </div>
+                </div>
+                <div class="row align-items-center mt-3 ">
+                    <div class="col-3 d-flex flex-column">
+                        <label for="expiration">Expiration</label>
+                        <input id="expiration" type="text">
+                    </div>
+                    <div class="col-3 d-flex flex-column">
+                        <label for="cvv">CVV</label>
+                        <input id="cvv" type="text">
+                    </div>
+                </div>
+                <hr>
+                <button class="btn btn-primary col-12" type="button">Continue to checkout</button>
+
+            </form>
+        </div>
+        <div class="col-6">rsedfc</div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="js/main.js"></script>
 </body>
 </html>

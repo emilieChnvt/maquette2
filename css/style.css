@@ -1,0 +1,10 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    padding-top:2em;
+    padding-left: 10em;
+    padding-right: 10em;
+}
