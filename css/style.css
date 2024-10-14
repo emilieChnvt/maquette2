@@ -8,3 +8,7 @@ html, body{
     padding-left: 10em;
     padding-right: 10em;
 }
+
+form{
+    width: 100%;
+}

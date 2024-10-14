@@ -9,50 +9,79 @@
 </head>
 <body>
 <div class="container body">
-   <div class="d-flex flex-column align-items-center">
+   <div class="d-flex flex-column align-items-center mb-5 px-5">
        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
            <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
            <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
        </svg>
        <h2>Checkout form</h2>
-       <p class="text-center">Below is an example from built entirely with Bootstrap's form controls. Each required from group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
+       <p class="text-center ">Below is an example from built entirely with Bootstrap's form controls. Each required from group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
    </div>
-    <div class="row d-flex ">
-        <div class="col-6">
-            <form method="">
+    <div class="row d-flex mt-4 gap-5 justify-content-center">
+        <div class="col-7 ">
+            <form method="" class="d-flex flex-column">
                 <h3>Biling adress</h3>
-                <div class="row align-items-center ">
-                    <div class="col-6">
+                <div class="row  ">
+                    <div class="col-6 d-flex flex-column  ">
                         <label for="firstName">First Name</label>
-                        <input id="firstName" type="text">
+                        <input id="firstName" type="text" class="mmar">
                     </div>
-                    <div class="col-6">
+                    <div class="col-6 d-flex flex-column">
                         <label for="lastName">Last Name</label>
                         <input id="lastName" type="text">
                     </div>
                 </div>
                 <div class="d-flex flex-column ">
-                        <label for="userName">Username</label>
-                        <input id="userName" type="text">
 
-                        <label for="email">Email (optionnel)</label>
-                        <input id="email"  placeholder="you@example.com" type="mail">
 
-                        <label for="adress">Adress</label>
-                        <input id="adress" placeholder="1234 Main st" type="text">
+                    <div class="input-group mb-3 mt-4 d-flex flex-column">
+                        <label for="floatingInputGroup1">Username</label>
+
+
+                        <div class="d-flex">
+                            <span class="input-group-text">@</span>
+                            <input type="text" class="form-control" placeholder="username" id="floatingInputGroup1" >
+
+                        </div>
+                    </div>
+
+                       <div class="d-flex flex-column mb-4">
+                           <label for="email">Email (optionnel)</label>
+                           <input id="email"  placeholder="you@example.com" type="mail">
+                       </div>
+
+                        <div class="d-flex flex-column mb-4">
+                            <label for="adress2">Adress</label>
+                            <input id="adress2" placeholder="1234 Main st" type="text">
+                        </div>
+
+                        <div class="d-flex flex-column mb-4">
+                            <label for="adress">Adress2 (optionnel)</label>
+                            <input id="adress" placeholder="Apartment or suite" type="text">
+                        </div>
                 </div>
-                <div class="row ">
-                    <div class="col-3">
+                <div class="row  ">
+                    <div class="col-4 mr-2 d-flex flex-column">
                         <label for="country">Country</label>
-                        <input id="country" type="text">
+                        <select id="country" class="mt-3">
+                            <option value="">Choose...</option>
+                            <option value="espagne">Espagne</option>
+                            <option value="france">France</option>
+                            <option value="allemagne">Allemagne</option>
+                        </select>
                     </div>
-                    <div class="col-3">
+                    <div class="col-4 mr-2 d-flex flex-column">
                         <label for="state">State</label>
-                        <input id="state" type="text">
+                        <select id="state" class="mt-3">
+                            <option value="">Choose...</option>
+                            <option value="espagne">Espagne</option>
+                            <option value="france">France</option>
+                            <option value="allemagne">Allemagne</option>
+                        </select>
                     </div>
-                    <div class="col-3">
+                    <div class="col-4 mr-2 ">
                         <label for="zip">Zip</label>
-                        <input id="zip" type="text">
+                        <input id="zip" type="text" class="mt-3">
                     </div>
                 </div>
                 <hr>
@@ -85,11 +114,11 @@
                     </div>
                 </div>
                 <div class="row align-items-center mt-3">
-                    <div class="col-6 flex-column">
+                    <div class="col-6 d-flexflex-column">
                         <label for="nameCard">Name on card</label>
                         <input id="nameCard" type="text">
                     </div>
-                    <div class="col-6 flex-column">
+                    <div class="col-6 d-flex flex-column">
                         <label for="cardNumber">Credit card number</label>
                         <input id="cardNumber" type="text">
                     </div>
@@ -109,7 +138,75 @@
 
             </form>
         </div>
-        <div class="col-6">rsedfc</div>
+        <div class="col-3">
+            <div class="d-flex align-items-start justify-content-between">
+                <h3  class="text-primary">
+                    Your cart
+                </h3>
+                <p class="badge rounded-circle text-bg-primary p-2 mt-2 ">3</p>
+            </div>
+            <div class=" ">
+                    <div class="row border p-2">
+                        <div class="col-9">
+                            <h6>Product Name</h6>
+                             <span> Brief description</span>
+                        </div>
+                        <div class="col-2">
+                            <span>$12</span>
+
+                        </div>
+                    </div>
+                    <div class="row border p-2">
+                        <div class="col-9">
+                            <h6>Second produit</h6>
+                            <span> Brief description</span>
+                        </div>
+                        <div class="col-2">
+                            <span>$8</span>
+
+                        </div>
+                    </div>
+                    <div class="row border p-2">
+                        <div class="col-9">
+                            <h6>Third Item</h6>
+                            <span> Brief description</span>
+                        </div>
+                        <div class="col-2">
+                            <span>$5</span>
+
+                        </div>
+                    </div>
+                    <div class="row border p-2">
+                        <div class="col-9 text-success">
+                            <h6>Promo code</h6>
+                            <span>EXAMPLECODE</span>
+                        </div>
+                        <div class="col-2 text-success">
+                            <span>-$5</span>
+
+                        </div>
+                    </div>
+                    <div class="row border p-2">
+                        <div class="col-9">
+                            <h6>Total (USD)</h6>
+
+                        </div>
+                        <div class="col-2">
+                            <span>$20</span>
+
+                        </div>
+                    </div>
+
+                    <div class="row border p-2  mt-3">
+                        <label for="code"></label>
+                        <input type="text" id="code" placeholder="code promo" class="col-8">
+                        <button class="btn btn-secondary col-4 p-2 " >Redeem</button>
+                    </div>
+
+
+
+            </div>
+        </div>
     </div>
 </div>
 
