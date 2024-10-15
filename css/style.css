@@ -9,12 +9,14 @@ html, body{
     padding-right: 10em;
 }
 
-form{
-    width: 100%;
-}
+
 .mar{
     height:24px
 }
-.mir{
-    margin-left: -5px;
+
+.legend{
+    font-size: 12px;
+}
+.footer{
+    font-size: 14px;
 }
