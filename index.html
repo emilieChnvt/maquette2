@@ -10,11 +10,11 @@
 <body>
 <div class="container body">
    <div class="d-flex flex-column align-items-center mb-5 px-5">
-       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bootstrap-fill" viewBox="0 0 16 16">
+       <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bootstrap-fill mb-2" viewBox="0 0 16 16">
            <path d="M6.375 7.125V4.658h1.78c.973 0 1.542.457 1.542 1.237 0 .802-.604 1.23-1.764 1.23zm0 3.762h1.898c1.184 0 1.81-.48 1.81-1.377 0-.885-.65-1.348-1.886-1.348H6.375z"/>
            <path d="M4.002 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4zm1.06 12V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396z"/>
        </svg>
-       <h2>Checkout form</h2>
+       <h2 >Checkout form</h2>
        <p class="text-center ">Below is an example from built entirely with Bootstrap's form controls. Each required from group has a validation state that can be triggered by attempting to submit the form without completing it.</p>
    </div>
     <div class="row d-flex mt-4 gap-5 justify-content-center">
@@ -47,21 +47,21 @@
 
                        <div class="d-flex flex-column mb-4">
                            <label for="email">Email (optionnel)</label>
-                           <input id="email"  placeholder="you@example.com" type="mail">
+                           <input id="email"  placeholder="you@example.com" type="email">
                        </div>
 
                         <div class="d-flex flex-column mb-4">
-                            <label for="adress2">Adress</label>
-                            <input id="adress2" placeholder="1234 Main st" type="text">
+                            <label for="address">Address</label>
+                            <input id="address" placeholder="1234 Main st" type="text">
                         </div>
 
                         <div class="d-flex flex-column mb-4">
-                            <label for="adress">Adress2 (optionnel)</label>
-                            <input id="adress" placeholder="Apartment or suite" type="text">
+                            <label for="address2">Address2 (optionnel)</label>
+                            <input id="address2" placeholder="Apartment or suite" type="text">
                         </div>
                 </div>
-                <div class="row  ">
-                    <div class="col-4 mr-2 d-flex flex-column">
+                <div class="row  mb-3">
+                    <div class="col-5 d-flex flex-column">
                         <label for="country">Country</label>
                         <select id="country" class="mt-3">
                             <option value="">Choose...</option>
@@ -70,7 +70,7 @@
                             <option value="allemagne">Allemagne</option>
                         </select>
                     </div>
-                    <div class="col-4 mr-2 d-flex flex-column">
+                    <div class="col-4 d-flex flex-column">
                         <label for="state">State</label>
                         <select id="state" class="mt-3">
                             <option value="">Choose...</option>
@@ -79,9 +79,9 @@
                             <option value="allemagne">Allemagne</option>
                         </select>
                     </div>
-                    <div class="col-4 mr-2 ">
+                    <div class="col-3 d-flex flex-column">
                         <label for="zip">Zip</label>
-                        <input id="zip" type="text" class="mt-3">
+                        <input id="zip" type="text" class="mt-3 mar">
                     </div>
                 </div>
                 <hr>
@@ -100,21 +100,21 @@
                 <hr>
                 <div class="payment">
                     <h3>Payment</h3>
-                    <div>
+                    <div class="mb-1">
                         <input id="credit" type="radio" checked>
                         <label for="credit">Credit card</label>
                     </div>
-                    <div>
+                    <div class="mb-1">
                         <input id="debit" type="radio">
                         <label for="debit">Debit card</label>
                     </div>
-                    <div>
+                    <div class="mb-1">
                         <input id="paypal" type="radio">
                         <label for="paypal">Paypal</label>
                     </div>
                 </div>
                 <div class="row align-items-center mt-3">
-                    <div class="col-6 d-flexflex-column">
+                    <div class="col-6 d-flex flex-column">
                         <label for="nameCard">Name on card</label>
                         <input id="nameCard" type="text">
                     </div>
@@ -134,7 +134,7 @@
                     </div>
                 </div>
                 <hr>
-                <button class="btn btn-primary col-12" type="button">Continue to checkout</button>
+                <button class="btn btn-primary col-12 p-2" type="button">Continue to checkout</button>
 
             </form>
         </div>
